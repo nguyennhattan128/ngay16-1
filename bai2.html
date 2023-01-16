@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    // const num=window.prompt();
+    //sử dụng window.prompt() sẽ tìm kiếm một hàm prompt() trong đối tượng window,
+    // còn sử dụng prompt() thì sẽ tìm kiếm trong toàn bộ đối tượng global.
+    // const str = num.toString();
+    // const result = [str[0]];
+    //
+    // for(let x=1; x<str.length; x++)
+    // {
+    //     if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+    //     {
+    //         result.push('-', str[x]);
+    //     }
+    //     else
+    //     {
+    //         result.push(str[x]);
+    //     }
+    // }
+    // console.log(result.join(''));
+    //sau khi được gộp thành một chuỗi bằng hàm join(). Hàm join() sẽ nối tất cả các phần
+    // tử trong mảng với nhau bằng ký tự truyền vào
+    const number = prompt(" nhap vao day so");
+    const newnumber = number.toString();
+    const result = [newnumber[0]];
+
+    for (let i = 1; i < newnumber.length; i++) {
+        if((newnumber[i-1]%2 === 0)&& (newnumber[i]%2 === 0))
+        {
+            result.push('-',newnumber[i]);
+        }
+        else
+        {
+            result.push(newnumber[i]);
+        }
+
+    }
+    console.log(result);
+    //["2", "-", "4", "5", "6", "3"] khi không có hàm join
+    // để ghép các phần tử của mảng lại thành một chuỗi.
+</script>
+
+</body>
+</html>
